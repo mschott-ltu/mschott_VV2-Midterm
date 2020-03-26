@@ -307,7 +307,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -352,6 +352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_UseCustomMaterial: 0
+  m_CustomMaterial: {fileID: 0}
+  m_UseCustomRendererAsset: 0
+  m_CustomRendererAsset: {fileID: 0}
 --- !u!114 &226280104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_FocusMode: 1
+  m_LightEstimationMode: 0
 --- !u!114 &226280105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +382,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Device: 0
+  m_PoseSource: 6
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!4 &226280106
 Transform:
   m_ObjectHideFlags: 0
@@ -1025,6 +1037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3859a92a05d4f5d418cb6ca605290e74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_AttemptUpdate: 1
+  m_MatchFrameRate: 1
 --- !u!4 &890993388
 Transform:
   m_ObjectHideFlags: 0
@@ -1670,6 +1684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Camera: {fileID: 226280102}
 --- !u!4 &1686662561
 Transform:
   m_ObjectHideFlags: 0
@@ -1697,6 +1712,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PlanePrefab: {fileID: 7248130636820740792, guid: a9b393c8680a8ca42967552fd9864c77,
+    type: 3}
+  m_DetectionMode: -1
 --- !u!1 &1696723070
 GameObject:
   m_ObjectHideFlags: 0
